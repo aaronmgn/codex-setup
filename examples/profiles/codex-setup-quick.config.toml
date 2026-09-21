@@ -1,0 +1,3 @@
+# Optional CLI profile for well-scoped work; the base setup remains Astra/xhigh.
+model = "gpt-6-astra"
+model_reasoning_effort = "high"

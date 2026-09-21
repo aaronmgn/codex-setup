@@ -1,0 +1,23 @@
+name: Checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - name: Check stock Bash syntax
+        run: |
+          /bin/bash -n install.sh
+          /bin/bash -n tests/test_install.sh
+      - name: Test installer with stock Bash
+        run: /bin/bash tests/test_install.sh

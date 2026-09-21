@@ -1,0 +1,5 @@
+# Optional CLI profile for an explicit review session.
+# Built-in /review does not load the custom reviewer agent's instructions or sandbox.
+model = "gpt-5.6-sol"
+model_reasoning_effort = "high"
+review_model = "gpt-5.6-sol"

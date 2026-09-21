@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+.env.*
+
+# Never publish local Codex state or installer backups.
+.codex/
+preview-codex/
+backups/
+auth.json
+sessions/
+archived_sessions/
+*.sqlite*
+*.log

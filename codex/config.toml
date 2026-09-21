@@ -1,0 +1,11 @@
+# Portable defaults from Aaron's Codex setup.
+# Choose models available to your account before installing.
+model = "gpt-6-astra"
+model_reasoning_effort = "xhigh"
+# Recheck these limits when changing models.
+model_context_window = 1000000
+model_auto_compact_token_limit = 900000
+
+[agents]
+# Concurrent subagent threads, excluding the main agent.
+max_concurrent_threads_per_session = 10
